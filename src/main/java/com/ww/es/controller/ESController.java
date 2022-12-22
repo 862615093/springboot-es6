@@ -6,6 +6,7 @@ import com.ww.es.base.BaseResult;
 import com.ww.es.pojo.Hotel;
 import com.ww.es.pojo.HotelDoc;
 import com.ww.es.service.IHotelService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.index.IndexRequest;
@@ -34,6 +35,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("es/")
+@Api(tags = "es查询常用API")
 public class ESController {
 
     @Autowired
